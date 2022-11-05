@@ -1,0 +1,8 @@
+name: RandomCmdByCmd
+version: '${version}'
+main: me.sturm.rcbc.RandomCmdByCmdPlugin
+authors: [ sturm ]
+description: lol
+softdepend: [PlaceholderAPI]
+commands:
+  randomcmdbycmd:

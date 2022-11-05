@@ -1,0 +1,82 @@
+
+lottery:
+  0:
+    '%vault_eco_balance% > 500':
+      'eco give %player% 5000':
+        weight: 1
+        console: true
+        message: "&aВы выиграли"
+      'null1':
+        weight: 10
+        console: true
+        message: "&cВы проиграли"
+        other:
+          - 'eco take %player% 500'
+  1:
+    '!%vault_eco_balance% < %arg1% && %arg1% = double && %arg1% > 0':
+      'eco give %player% %arg1%':
+        weight: 1
+        console: true
+        message: "&aВы выиграли"
+        other:
+          - 'eco give %player% %arg1%'
+          - 'eco give %player% %arg1%'
+          - 'eco give %player% %arg1%'
+      'null1':
+        weight: 3
+        console: true
+        message: "&cВы проиграли"
+        other:
+          - 'eco take %player% %arg1%'
+
+randomfood:
+  0:
+    '!%food% > 8 && %vault_eco_balance% > 100 || !%health% > 10 && %vault_eco_balance% > 100':
+      'heal %player%':
+        weight: 46
+        console: true
+        message: "&aВас вылечило"
+        other:
+          - 'eco take %player% 100'
+      'feed %player%':
+        weight: 23
+        console: "&aВас накормило"
+        other:
+          - 'eco take %player% 100'
+      'null1':
+        weight: 92
+        console: true
+        message: "&cНичего не произошло :("
+        other:
+          - 'eco take %player% 100'
+      'null2':
+        weight: 1
+        console: true
+        message: "&cНичего не произошло, &dно вы получили приятный бонус"
+        other:
+          - 'eco give %player% 40'
+
+otherworld:
+  0:
+    '%world% = world && !%level% < 50 && %x% > 1000 & %z% > 1000':
+      'tp %player% nether %x% %y% %z%':
+        weight: 1
+        console: true
+        message: "&cВы в аду"
+      'tp %player% end %x% %y% %z%':
+        weight: 1
+        console: true
+        message: "&bВы в энде"
+
+
+randweather:
+  0:
+    '%level% > 10 && %vault_eco_balance% > 10000':
+      'sun world':
+        weight: 0.5
+        console: true
+        message: "&aВы установили солнечную погоду"
+      'rain world':
+        weight: 0.5
+        console: true
+        message: "&bВы установили дождливую погоду"
