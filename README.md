@@ -1,1 +1,1 @@
-[Скачать] (https://disk.yandex.ru/d/PYthtP34iNA_Lw)
+[Скачать] (https://disk.yandex.ru/d/PYthtP34iNA_Lw/)
