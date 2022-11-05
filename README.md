@@ -3,13 +3,13 @@
 
 
 # Описание
-[Скачать (яндекс диск)][download-link-yandex]
-Spigot 1.16.5 plugin
+[Скачать (яндекс диск)][download-link-yandex] 
+Spigot 1.16.5 plugin 
 Плагин добавляет возможность создавать команды, которые с некоторым шансом выполняют другие команды
 
 ## Информация
-Права для команд - **rcbc.команда**
-Право на команду перезагрузки *(/randomcmdbycmd reload)* - **randomcmdbycmd.reload**
+Права для команд - **rcbc.команда** 
+Право на команду перезагрузки *(/randomcmdbycmd reload)* - **randomcmdbycmd.reload** 
 
-## Ссылки
-[Тема на RuBukkit][rubukkit-thread]
+## Ссылки 
+[Тема на RuBukkit][rubukkit-thread] 
